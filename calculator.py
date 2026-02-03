@@ -4,16 +4,16 @@ def calculator():
 
     try:
         num1 = float(input("Enter first number: "))
-        op = input("Enter operator (+ - * /): ")
+        operator = input("Enter operator (+ - * /): ")
         num2 = float(input("Enter second number: "))
 
-        if op == "+":
+        if operator == "+":
             result = num1 + num2
-        elif op == "-":
+        elif operator == "-":
             result = num1 - num2
-        elif op == "*":
+        elif operator == "*":
             result = num1 * num2
-        elif op == "/":
+        elif operator == "/":
             if num2 == 0:
                 raise ZeroDivisionError("Error: Division by zero")
             result = num1 / num2
